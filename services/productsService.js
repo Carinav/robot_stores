@@ -5,4 +5,10 @@ const getProducts = async () => {
     return await productsRepo.getProducts();
 }
 
+const getProduct = async (productsId) => {
+    console.log('Service: getProduct ' + productsId);
+    return await productsRepo.getProduct(productsId);
+}
+
 module.exports.getProducts = getProducts;
+module.exports.getProduct = getProduct;

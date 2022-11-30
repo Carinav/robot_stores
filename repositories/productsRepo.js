@@ -9,4 +9,10 @@ const getProducts = async () => {
     return await productsCollection.find({}).toArray();
 }
 
+const getProduct = async (productsId) => {
+    console.log('Repo: getProduct');
+    return await productsCollection.find({"id":parseInt(productsId)}).toArray();
+}
+
 module.exports.getProducts = getProducts;
+module.exports.getProduct = getProduct;

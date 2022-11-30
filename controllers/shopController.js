@@ -6,4 +6,12 @@ const getProducts = (req, res) => {
         .then((allProducts) => res.json(allProducts));
 }
 
+const getProduct = (req, res) => {
+    console.log('Shop Controller: getProduct');
+    let productsId = req.params.productsId;
+    productsService.getProduct(productsId)
+        .then((Product) => res.json(Product));
+}
+
 module.exports.getProducts = getProducts;
+module.exports.getProduct = getProduct;
