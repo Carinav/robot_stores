@@ -1,0 +1,15 @@
+{
+  "name": "robotstoresproject",
+  "version": "1.0.0",
+  "description": "Building an ecommerce store using a MongoDB Collection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1"
+  }
+}
